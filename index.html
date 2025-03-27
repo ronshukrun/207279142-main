@@ -2,6 +2,28 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<title>Miriam Peretz</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    #likeButton {
+        padding: 10px;
+        background-color: #183eae;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #likeButton i {
+        margin-right: 10px;
+    }
+
+    #likeCount {
+        margin-top: 10px;
+    }
+</style>
 </head>
 <body>
 <div id="menu">
@@ -12,10 +34,8 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
-<li><a href="#testtttt">Contact Me</a></li>
 
 </div>
-		  
 <section id="about" class="section">
 <br/>
 <br/>
@@ -24,24 +44,36 @@
 <br/>
 <br/>
 <br/>
+<h2>"I love this country with a fierce love, this country moves me deeply, something burns in me with love for this country, for this land."</h2>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me and ron
 
-<p> jhgf </p>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+About Miriam Peretz
+<br/>
+<p>
+  Miriam Peretz is an Israeli educator, author, and public figure who serves as an inspiration to many through her
+  extraordinary life story and dedication to promoting values of education, giving, and love for the country. 
+  She was born in Morocco in 1954 and immigrated to Israel as a child. For many years, she worked as a teacher and school 
+  principal, driven by her belief in the power of education to shape future generations. Miriam tragically lost her two sons,
+  Lieutenant Uriel and Major Eliraz Peretz, who fell in military service. Despite her immense grief, she chose to dedicate 
+  her life to strengthening the spirit of the nation and educating for hope, unity, and leadership. Her lectures and books 
+  touch the hearts of many and impact diverse audiences across the country. In recognition of her contributions to society 
+  and the state, she was awarded the Israel Prize in 2018. Her interests include education, writing, public speaking, and
+  community empowerment, and she continues to work tirelessly to preserve her sons’ legacy and share her love for the people
+  and the country.
+</p>
 <br/>
 </section>
 
 <section id="photos" class="section">
+
 <br/>
 <br/>
 <br/>
@@ -58,10 +90,17 @@ about me and ron
 <br/>
 <br/>
 <br/>
-my photos
+Photos of Miriam Peretz
 <br/>
 <br/>
 <br/>
+<img src="https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_533,w_758/572068"width=280 hight=1000/>
+<img src="https://www.humansoftelaviv.co.il/wp-content/uploads/2019/11/%D7%9E%D7%A8%D7%99%D7%9D-%D7%A4%D7%A8%D7%A5.jpg"width=300 hight=1000/>
+<img src="https://2.a7.org/files/pictures/781x439/501662.jpg"width=355 hight=1000/></br>
+<!-- <img src="https://mida.org.il/wp-content/uploads/2018/04/perez1.jpg"width=450 hight=1000/></br> -->
+<img src="https://www.kan.org.il/media/nbwnkydl/cat30296_img732697739.jpg?width=642&height=361&rnd=133271240429130000"width=320 hight=1000/>
+<img src="https://2.a7.org/files/pictures/781x439/1016790.jpg"width=321 hight=1000/>
+<img src="https://mobile.srugim.co.il/_next/image?url=https%3A%2F%2Fwww.srugim.co.il%2Fi%2Fwp-content%2Fuploads%2F2017%2F05%2FF140320ABG03__w645h390q80__w570h350q80.jpg&w=3840&q=75"width=293 hight=1000/>
 </section>
 
 <section id="playlist" class="section">
@@ -81,10 +120,13 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+Playlist
 <br/>
 <br/>
 <br/>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/yy0oAUuSA6k?si=B5PO7L_nYpwfOUtT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/bU-45GaMe6w?si=VHQlnoRD7CpiDO5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/-R2eoIBcVjg?si=izUucM8FdQiJqY6C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 
 <section id="like" class="section">
@@ -104,10 +146,26 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
 <br/>
 <br/>
 <br/>
+<h1>Like this page</h1>
+<button id="likeButton">
+    <i class="fas fa-thumbs-up"></i> Like
+</button>
+
+<p id="likeCount">0 Likes</p>
+
+<script>
+    let likeCount = localStorage.getItem("likeCount") ? parseInt(localStorage.getItem("likeCount")) : 0;
+    document.getElementById("likeCount").innerText = likeCount + " Likes";
+    document.getElementById("likeButton").addEventListener("click", function() {
+        likeCount++;
+        document.getElementById("likeCount").innerText = likeCount + " Likes";
+        localStorage.setItem("likeCount", likeCount);
+    });
+</script>
+
 </section>
 
 <section id="qrcoder" class="section">
