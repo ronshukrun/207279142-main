@@ -13,20 +13,17 @@
   }
   
   #menu a {
-	text-decoration: none;
-	color: #f0f2f5; 	 
+	text-decoration: none; 
+	color: #e7eaed; 	  
 	font-size: 1.2em;
 	font-weight: bold;
   }
 
   #menu a:hover {
-	color: #0372b8;
+	color: #0057b8;
 	text-decoration: underline;
   }
-*
-{
-	text-align: center;
-}
+
 
 .MiriamPeretz  {
 	font-family: 'Catamaran', sans-serif;
@@ -123,58 +120,135 @@ body{
 
 }
 
-.section-title span {
+.section-title span{
     flex-grow: 1;
     height: 2px;
     background-color: #0372b8;
     margin: 0 15px;
 }
 .about p{
-    padding: 50px 20px; /* ריווח פנימי מסביב */
-    border-radius: 10px; /* פינות מעוגלות */
-    max-width: 1000px; /* רוחב מקסימלי של התוכן */
-    margin: 0 auto; /* ממרכז את התוכן */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* הצללה רכה */
+    padding: 50px 20px; 
+    border-radius: 10px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
 }
 
 
 .about p {
-    font-size: 1.2rem; /* גודל טקסט נוח לקריאה */
-    color: #555; /* צבע טקסט בהיר */
-    line-height: 1.8; /* ריווח בין השורות */
-    text-align: le; /* ממורכז את הטקסט */
-    max-width: 900px; /* רוחב מקסימלי לפסקה */
-    margin: 20px auto; /* ממרכז את הפסקה */
+    font-size: 1.2rem; 
+    color: #555; 
+    line-height: 1.8;
+    text-align: le; 
+    max-width: 900px; 
+    margin: 20px auto; 
     padding: 20px;
-    border-radius: 10px; /* פינות מעוגלות */
+    border-radius: 10px; 
 	text-align: left;
 
-    /* border: 1px solid #ddd; גבול דק וקל */
 }
 .photos img {
-    height: auto; /* יחס גובה-רוחב ישמר */
-    border-radius: 20px; /* פינות מעוגלות */
-    transition: transform 0.3s ease; /* אפקט חלק בעת שינוי */
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease; 
 }
 
 .photos img:hover {
-    transform: scale(1.1); /* הגדלה קלה ב-10% כאשר העכבר מעל התמונה */
+    transform: scale(1.1);
 }
 .playlist p{
-    padding: 50px 20px; /* ריווח פנימי מסביב */
-    border-radius: 10px; /* פינות מעוגלות */
-    max-width: 10px; /* רוחב מקסימלי של התוכן */
-    margin: 0 auto; /* ממרכז את התוכן */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* הצללה רכה */
-	font-size: 1.0rem; /* גודל טקסט נוח לקריאה */
-    color: #555; /* צבע טקסט בהיר */
-    line-height: 1.8; /* ריווח בין השורות */
+    padding: 50px 20px;
+    border-radius: 10px; 
+    max-width: 10px;
+    margin: 0 auto; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+	font-size: 1.0rem;
+    color: #555; 
+    line-height: 1.8; 
     max-width: 500px; 
-    margin: 20px auto; /* ממרכז את הפסקה */
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 10px; /* פינות מעוגלות */
+    border-radius: 10px; 
 	text-align: left;
 
 }
+body {
+	font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
- 
+form {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#likeButton {
+    padding: 5px 10px; 
+    background-color: #183eae;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; 
+    display: inline-block; 
+    width: auto; 
+    height: auto; 
+    border-radius: 5px; 
+    text-align: center;  
+}
+
+#likeButton i {
+    margin-right: 5px; 
+    font-size: 14px; 
+}
+
+#likeCount {
+    margin-top: 10px;
+    font-size: 14px;  
+}
+.spa h1{
+
+	color: #333;
+	list-style-type: disc;
+	margin-left: 20px;
+	text-align:left;
+	margin: 10px 0;
+	font-family: 'Catamaran', sans-serif;
+	line-height: 1.6;
+	margin: 20px;
+}
+.spa p{
+    font-size: 1.2rem; 
+    color: #555; 
+    line-height: 1.8;
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 10px; 
+	text-align: left;
+	font-family: 'Catamaran', sans-serif;
+
+}
+.spa ul{
+    font-size: 1.2rem; 
+    color: #555; 
+    line-height: 1.8;
+    max-width: 900px; 
+    margin: 20px auto; 
+	font-family: 'Catamaran', sans-serif;
+    padding: 20px;
+    border-radius: 10px; 
+	text-align: left;
+}

@@ -4,33 +4,6 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>Miriam Peretz</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-    #likeButton {
-        padding: 10px;
-        background-color: #183eae;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        display: flex;
-
-        align-items: center;
-        justify-content: center; /* מוודא שהכפתור יהיה ממורכז */
-        margin: 0 auto;
-    }
-    
-    #likeButton i {
-        margin-right: 10px;
-        align-items: center;
-
-    }
-
-    #likeCount {
-        margin-top: 10px;
-        align-items: center;
-
-    }
-</style>
 <title>QR Code</title>
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 <style>
@@ -42,7 +15,7 @@
     position: relative;  
   }
   #qrcode-text {
-    font-family: Arial, sans-serif;
+    font-family: 'Catamaran', sans-serif;
     position: absolute;
     bottom: 10px;  
     left: 50%;
@@ -50,8 +23,7 @@
     font-size: 18px;
     color: #333;
   }
-</style>
-<style>
+
   .video-container {
     text-align: center;
   }
@@ -65,7 +37,7 @@
   p {
     font-size: 16px;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: 'Catamaran', sans-serif;
   }
 </style>
 </head>
@@ -205,6 +177,12 @@
 <div class="section-title">
   <span></span>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <h3>Like this page</h3>
 <button id="likeButton">
     <i class="fas fa-thumbs-up"></i> Like
@@ -232,18 +210,6 @@
   <div id="qrcode"></div>
   <div id="qrcode-text">Scan me!</div> 
 </div>
-
-<!-- <script>
-  QRCode.toDataURL('https://ronshukrun.github.io/207279142-main/', function (error, url) {
-    if (error) console.error(error)
-    var img = document.createElement('img');
-    img.src = url;
-    img.style.width = '150px';  
-    document.getElementById('qrcode').appendChild(img);
-  });
-</script> -->
-
-
 <script>
   QRCode.toDataURL('https://ronshukrun.github.io/207279142-main/', function (error, url) {
     if (error) console.error(error);
@@ -255,58 +221,130 @@
 </script>
 </section>
 
-<section id="spa" class="section">
+<section id="spa" class="spa">
 
-  <br/>
-  <br/>
-  <br/><br/>
-  <br/>
-  <br/><br/>
-  <br/>
-  <br/><br/>
-  <br/>
-  <br/>
-ans
 <br/>
 <br/>
 <br/>
+<br/>ֿ
 <br/>
 <br/>
 <br/>
+<div class="section-title">
+  <span></span>Ans<span></span>
+</div>
 <br/>
 <br/>
 <br/>
+<h2>1.Key Differences Between Web1, Web2, and Web3</h2>
+<ul>
+    <li><strong>Web1:</strong> 
+        A read-only web, where users can only consume information. The websites are static, and the interaction is limited to viewing content.
+    </li>
+    <li><strong>Web2:</strong> 
+        Focuses on user-generated content, allowing interactivity and social features. Websites are dynamic and personalized, enabling users to engage with content and share it easily.
+    </li>
+    <li><strong>Web3:</strong> 
+        A decentralized web, leveraging blockchain technology. Web3 gives users control over their data, prioritizing privacy, security, and user ownership. It focuses on peer-to-peer interactions without intermediaries.
+    </li>
+</ul>
+
+<h2>2. Use Case: "Side Effects of Medications"</h2>
+<h3>Web1</h3>
+<p>
+    In Web1, searching for "side effects of medications" would lead you to a static webpage with general, read-only information. You'd only be able to read the content, and there wouldn't be any interactive elements, comments, or updates.
+</p>
+
+<h3>Web2</h3>
+<p>
+    On Web2, the search results would be dynamic, showing user-generated content such as forums, product reviews, and medical blogs. You might see personalized content or suggestions based on your search history, and you could interact with other users through comments or sharing.
+</p>
+
+<h3>Web3</h3>
+<p>
+    In Web3, the search results would come from decentralized databases or blockchain platforms. Information would be more transparent, and you might be able to access peer-reviewed or verified data. User privacy and data control would be prioritized, ensuring that the content you interact with is secure and reliable.
+</p>
 <br/>
-<br/>
+
 </section>
 
 <section id="contact" class="section">
+
 <br/>
 <br/>
 <br/>
 <br/>
+<div class="section-title">
+  <span></span>📩 Contact me<span></span>
+</div>
+<br/>
+
+<br/>
+<br/>
+
+<form
+  action="https://formspree.io/f/mnnpbpoo"
+  method="POST"
+>
+<label>Full Name:</label></br>
+<input type="text" id="name" placeholder="Your full name" required style="width: 380px;"><br/>
+
+<label>
+  Your email:
+  <input type="email" name="email" placeholder="Enter your email" required style="width: 380px;">
+</label>
+
+<label>
+  Your message:
+  <input type="message" placeholder="Write your message here..."style="width: 380px;" >
+</label>
+  <label>Choose an Emoji:</label>
+  <select id="emoji">
+    <option value="🙂">🙂 Smile</option>
+    <option value="😀">😀 Happy</option>
+    <option value="😢">😢 Sad</option>
+    <option value="😎">😎 Cool</option>
+    <option value="😃">😃 Big Smile</option>
+    <option value="😂">😂 Laughing</option>
+    <option value="😍">😍 Love</option>
+    <option value="😜">😜 Playful</option>
+    <option value="😅">😅 Nervous Smile</option>
+    <option value="🤔">🤔 Thinking</option>
+    <option value="😒">😒 Unamused</option>
+    <option value="😇">😇 Angel</option>
+    <option value="😈">😈 Devil</option>
+    <option value="🤩">🤩 Star Struck</option>
+    <option value="😶">😶 Speechless</option>
+    <option value="🤗">🤗 Hug</option>
+    <option value="😏">😏 Smirk</option>
+    <option value="😳">😳 Embarrassed</option>
+    <option value="🥺">🥺 Pleading</option>
+    <option value="😝">😝 Tongue Out</option>
+    <option value="😏">😏 Smirk</option>
+    <option value="🤯">🤯 Mind Blown</option>
+    <option value="🥳">🥳 Party</option>
+    <option value="😔">😔 Disappointed</option>
+    <option value="💪">💪 Strong</option>
+    <option value="🧐">🧐 Curious</option>
+    <option value="🥴">🥴 Dizzy</option>
+    <option value="😜">😜 Cheeky</option>
+    <option value="🫣">🫣 Face with hand over mouth</option>
+    <option value="🧠">🧠 Brain</option>
+    
+  </select>
+
+  <button type="submit">Send</button>
+</form>
+
+
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<br/><br/>
+
+
+
 </section>
 
 
