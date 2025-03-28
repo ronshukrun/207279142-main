@@ -13,50 +13,105 @@
         cursor: pointer;
         font-size: 20px;
         display: flex;
+
         align-items: center;
+        justify-content: center; /* מוודא שהכפתור יהיה ממורכז */
+        margin: 0 auto;
     }
     
     #likeButton i {
         margin-right: 10px;
+        align-items: center;
+
     }
 
     #likeCount {
         margin-top: 10px;
+        align-items: center;
+
     }
+</style>
+<title>QR Code</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<style>
+  #qrcode-container {
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid #76bbeb; 
+    text-align: center;
+    position: relative;  
+  }
+  #qrcode-text {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 10px;  
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+<style>
+  .video-container {
+    text-align: center;
+  }
+
+  .video-box {
+    display: inline-block; 
+    margin: 10px;
+    vertical-align: top; 
+  }
+
+  p {
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
 </style>
 </head>
 <body>
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-
+  <ul id="nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#playlist">Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#spa">Q&A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
 </div>
-<section id="about" class="section">
+<section id="about" class="about">
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<h2>"I love this country with a fierce love, this country moves me deeply, something burns in me with love for this country, for this land."</h2>
-<br/>
-<br/>
-<br/>
-<br/>
+<h1 class="MiriamPeretz">Miriam Peretz</h1>
+
 
 <br/>
 <br/>
+<h1 class="typewriter"></h1>
+<script>
+  setTimeout(() => {
+      document.querySelector(".typewriter").classList.add("stop-blinking");
+  }, 8000);
+</script>
 <br/>
 <br/>
 <br/>
-About Miriam Peretz
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<span class="line"></span>
+<div class="section-title">
+  <span></span>About Miriam Peretz<span></span>
+</div>
+<!-- <h1>About Miriam Peretz</h1>   -->
 <p>
   Miriam Peretz is an Israeli educator, author, and public figure who serves as an inspiration to many through her
   extraordinary life story and dedication to promoting values of education, giving, and love for the country. 
@@ -72,61 +127,68 @@ About Miriam Peretz
 <br/>
 </section>
 
-<section id="photos" class="section">
+<section id="photos" class="photos">
+
 
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-Photos of Miriam Peretz:
+<span class="line"></span>
+<div class="section-title">
+  <span></span>Photos of Miriam Peretz<span></span>
+</div>
 <br/>
 <br/>
 <br/>
 <img src="https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_533,w_758/572068"width=280 hight=1000/>
 <img src="https://www.humansoftelaviv.co.il/wp-content/uploads/2019/11/%D7%9E%D7%A8%D7%99%D7%9D-%D7%A4%D7%A8%D7%A5.jpg"width=300 hight=1000/>
 <img src="https://2.a7.org/files/pictures/781x439/501662.jpg"width=355 hight=1000/></br>
-<!-- <img src="https://mida.org.il/wp-content/uploads/2018/04/perez1.jpg"width=450 hight=1000/></br> -->
 <img src="https://www.kan.org.il/media/nbwnkydl/cat30296_img732697739.jpg?width=642&height=361&rnd=133271240429130000"width=320 hight=1000/>
 <img src="https://2.a7.org/files/pictures/781x439/1016790.jpg"width=321 hight=1000/>
 <img src="https://mobile.srugim.co.il/_next/image?url=https%3A%2F%2Fwww.srugim.co.il%2Fi%2Fwp-content%2Fuploads%2F2017%2F05%2FF140320ABG03__w645h390q80__w570h350q80.jpg&w=3840&q=75"width=293 hight=1000/>
 </section>
 
-<section id="playlist" class="section">
+<section id="playlist" class="playlist">
 <br/>
 <br/>
 <br/>
 <br/>
+<div class="section-title">
+  <span></span>Playlist<span></span>
+</div>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-Playlist
-<br/>
-<br/>
-<br/>
-<iframe width="300" height="215" src="https://www.youtube.com/embed/yy0oAUuSA6k?si=B5PO7L_nYpwfOUtT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="300" height="215" src="https://www.youtube.com/embed/bU-45GaMe6w?si=VHQlnoRD7CpiDO5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="300" height="215" src="https://www.youtube.com/embed/-R2eoIBcVjg?si=izUucM8FdQiJqY6C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-container">
+  <div class="video-box">
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/yy0oAUuSA6k?si=B5PO7L_nYpwfOUtT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+  <b>"Miriam Peretz, Laureate of the Israel Prize"</b></br>
+  The Israel Prize ceremony is one of the most prestigious events in the country, honoring individuals who have made significant contributions to Israeli society.
+  Miriam Peretz, laureate of the Israel Prize, is a symbol of courage. After losing her two sons in Israel's wars, she became a role model, leading with values of hope, resilience, and love for the land.</p>
+</div>
+
+  <div class="video-box">
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/bU-45GaMe6w?si=VHQlnoRD7CpiDO5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </br>
+    <p>
+      <b>
+        "The Power of Small Things"
+      </b></br>
+      Miriam Peretz loves this song so much because it emphasizes the importance of appreciating the small things in life,
+       like a smile, a hug, or a kind word. She highlights that we need to learn to appreciate what we have and face difficult
+        situations with hope for a better future.</p>
+  </div>
+
+  <div class="video-box">
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/-R2eoIBcVjg?si=izUucM8FdQiJqY6C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+<b>"Miriam Peretz on Channel 14"</b></br>
+  In an interview with Channel 14, Miriam Peretz shares her pain over the fact that the public discourse is primarily focused on politics, while the memory of Israel's fallen soldiers is being forgotten. She speaks about the soldiers who went into battle together, without differences, with the goal of protecting our home, and calls for a discourse of brotherhood and solidarity.</p>
+</div>
+</div>
+
+
 </section>
 
 <section id="like" class="section">
@@ -138,18 +200,12 @@ Playlist
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>Like this page</h1>
+
+<span class="line"></span>
+<div class="section-title">
+  <span></span>
+</div>
+<h3>Like this page</h3>
 <button id="likeButton">
     <i class="fas fa-thumbs-up"></i> Like
 </button>
@@ -170,45 +226,44 @@ Playlist
 
 <section id="qrcoder" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+
+
+<div id="qrcode-container">
+  <div id="qrcode"></div>
+  <div id="qrcode-text">Scan me!</div> 
+</div>
+
+<script>
+  QRCode.toDataURL('https://ronshukrun.github.io/207279142-main/', function (error, url) {
+    if (error) console.error(error)
+    var img = document.createElement('img');
+    img.src = url;
+    img.style.width = '150px';  
+    document.getElementById('qrcode').appendChild(img);
+  });
+</script>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+  <br/>
+  <br/>
+  <br/><br/>
+  <br/>
+  <br/><br/>
+  <br/>
+  <br/><br/>
+  <br/>
+  <br/>
 ans
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -231,7 +286,13 @@ ans
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
 contact me
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
