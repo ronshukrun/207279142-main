@@ -233,9 +233,20 @@
   <div id="qrcode-text">Scan me!</div> 
 </div>
 
-<script>
+<!-- <script>
   QRCode.toDataURL('https://ronshukrun.github.io/207279142-main/', function (error, url) {
     if (error) console.error(error)
+    var img = document.createElement('img');
+    img.src = url;
+    img.style.width = '150px';  
+    document.getElementById('qrcode').appendChild(img);
+  });
+</script> -->
+
+
+<script>
+  QRCode.toDataURL('https://ronshukrun.github.io/207279142-main/', function (error, url) {
+    if (error) console.error(error);
     var img = document.createElement('img');
     img.src = url;
     img.style.width = '150px';  
