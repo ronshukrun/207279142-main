@@ -201,7 +201,7 @@ input, textarea, select, button {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 14px; 
+    font-size: 20px; 
     display: inline-block; 
     width: auto; 
     height: auto; 
@@ -211,7 +211,7 @@ input, textarea, select, button {
 
 #likeButton i {
     margin-right: 5px; 
-    font-size: 14px; 
+    font-size: 20px; 
 }
 
 #likeCount {
