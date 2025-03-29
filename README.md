@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/89IMDEJr)
 # Miriam Peretz – Personal Website
 
 The website was created to honor and showcase the inspiring life story of Miriam Peretz, a courageous woman who dedicated her life to promoting values of unity, solidarity, and heritage.
