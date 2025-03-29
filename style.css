@@ -280,7 +280,13 @@ body {
     background-position: right top;
     background-repeat: no-repeat;
     margin: 0;
-    height: 100vh; /* בגובה מלא של המסך */
-	background-attachment: fixed;
+    height: 100vh;
+    background-attachment: fixed;
+}
 
+@media (max-width: 768px) {
+    body {
+        background-attachment: fixed; /* במובייל, שומר את התמונה במקום */
+        background-position: right top;
+    }
 }
