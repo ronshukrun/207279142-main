@@ -20,8 +20,8 @@
   }
 
   #menu a:hover {
-	color: #0057b8;
-	text-decoration: underline;
+	color: #8cbaed;
+	text-decoration: none;
   }
 
 
@@ -54,10 +54,11 @@
 
 h1 {
 	font-family: 'Catamaran', sans-serif;
-    color: rgb(245, 248, 252);
+    color: #0372b8;
     text-align: center;
-    font-weight: 700;
+    font-weight: bolder;
     margin: 1rem;
+	-webkit-text-stroke: 0.8px white;
 }
 
 @keyframes typing {
@@ -103,11 +104,7 @@ h1 {
     animation: none;
     border-right: none;
 }
-body{
-	background-image: url("https://www.pqpq.co.il/productImages2/30/2020/04/26/image1587894559.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
 
 .section-title {
     display: flex;
@@ -163,7 +160,7 @@ body{
     margin: 0 auto; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
 	font-size: 1.0rem;
-    color: #555; 
+    color: #000000; 
     line-height: 1.8; 
     max-width: 500px; 
     margin: 20px auto;
@@ -175,13 +172,13 @@ body{
 body {
 	font-family: 'Catamaran', sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 form {
     max-width: 400px;
     margin: auto;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -211,19 +208,23 @@ input, textarea, select, button {
 
 #likeButton i {
     margin-right: 5px; 
-    font-size: 20px; 
+    font-size: 14px; 
 }
 
 #likeCount {
     margin-top: 10px;
     font-size: 14px;  
 }
-.spa h1{
+.like h2{
+	font-family: 'Catamaran', sans-serif;
+    color: #0372b8;
 
-	color: #333;
-	list-style-type: disc;
+}
+.spa h2{
+
+	color: #0372b8;	list-style-type: disc;
 	margin-left: 20px;
-	text-align:left;
+	text-align:center;
 	margin: 10px 0;
 	font-family: 'Catamaran', sans-serif;
 	line-height: 1.6;
@@ -231,7 +232,7 @@ input, textarea, select, button {
 }
 .spa p{
     font-size: 1.2rem; 
-    color: #555; 
+    color: #000000;
     line-height: 1.8;
     max-width: 900px; 
     margin: 20px auto; 
@@ -243,7 +244,7 @@ input, textarea, select, button {
 }
 .spa ul{
     font-size: 1.2rem; 
-    color: #555; 
+    color: #000000;
     line-height: 1.8;
     max-width: 900px; 
     margin: 20px auto; 
@@ -251,4 +252,16 @@ input, textarea, select, button {
     padding: 20px;
     border-radius: 10px; 
 	text-align: left;
+}
+.qrcoder h2{
+	font-family: 'Catamaran', sans-serif;
+    color: #0372b8;
+
+}
+body {
+    background-image: url("photo.png"); 
+    background-position: right top; 
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    margin: 0; 
 }
