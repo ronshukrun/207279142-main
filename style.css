@@ -264,4 +264,5 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
     margin: 0; 
+	background-size: auto 100%;
 }
