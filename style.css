@@ -58,9 +58,9 @@ h1 {
     text-align: center;
     font-weight: bolder;
     margin: 1rem;
-	-webkit-text-stroke: 0.8px white;
+	-webkit-text-stroke: 0.6px white;
+	font-size: 2.5em;
 }
-
 @keyframes typing {
     0%, 5% { content: ""; }
     10% { content: """I"; }
@@ -142,8 +142,10 @@ h1 {
     padding: 20px;
     border-radius: 10px; 
 	text-align: left;
+	background-color: #ffffff;
 
 }
+
 .photos img {
     height: auto;
     border-radius: 20px;
@@ -151,7 +153,7 @@ h1 {
 }
 
 .photos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5); /* התמונה תגדל ב-10% בעת החיבור */
 }
 .playlist p{
     padding: 50px 20px;
@@ -167,6 +169,7 @@ h1 {
     padding: 20px;
     border-radius: 10px; 
 	text-align: left;
+	background-color: #ffffff;
 
 }
 body {
@@ -240,6 +243,8 @@ input, textarea, select, button {
     border-radius: 10px; 
 	text-align: left;
 	font-family: 'Catamaran', sans-serif;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+	background-color: #ffffff;
 
 }
 .spa ul{
@@ -252,17 +257,30 @@ input, textarea, select, button {
     padding: 20px;
     border-radius: 10px; 
 	text-align: left;
-}
-.qrcoder h2{
-	font-family: 'Catamaran', sans-serif;
-    color: #0372b8;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+	background-color: #ffffff;
 
 }
-body {
+h2{
+	font-family: 'Catamaran', sans-serif;
+    color: #0372b8;
+	font-size: 1.7em;
+
+}
+/* body {
     background-image: url("photo.png"); 
     background-position: right top; 
     background-repeat: no-repeat;
 	background-attachment: fixed;
     margin: 0; 
 	background-size: auto 100%;
+} */
+body {
+    background-image: url("photo.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh; /* בגובה מלא של המסך */
+	background-attachment: fixed;
+
 }
