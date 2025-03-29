@@ -19,7 +19,7 @@
 	font-weight: bold;
   }
 
-  #menu a:hover {
+#menu a:hover {
 	color: #8cbaed;
 	text-decoration: none;
   }
@@ -153,8 +153,9 @@ h1 {
 }
 
 .photos img:hover {
-    transform: scale(1.5); /* התמונה תגדל ב-10% בעת החיבור */
+    transform: scale(1.5); 
 }
+
 .playlist p{
     padding: 50px 20px;
     border-radius: 10px; 
@@ -267,24 +268,12 @@ h2{
 	font-size: 1.7em;
 
 }
-/* body {
-    background-image: url("photo.png"); 
-    background-position: right top; 
-    background-repeat: no-repeat;
-	background-attachment: fixed;
-    margin: 0; 
-	background-size: auto 100%;
-} */
+
 body {
     background-image: url("photo.png");
-    background-position: right top;
+    background-position: right ;
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
     background-attachment: fixed;
-}
-@media (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* משנה את התנהגות התמונה במובייל */
-    }
 }
